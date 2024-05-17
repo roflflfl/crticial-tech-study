@@ -1,0 +1,1 @@
+"# crticial-tech-study" 
