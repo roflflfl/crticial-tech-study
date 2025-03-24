@@ -3,48 +3,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Network-Activated Design</title>
-    <link rel="stylesheet" href="NTD.css">
+    <title> Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .bio-section {
+            margin-bottom: 60px;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+
+        .bio-text {
+            max-width: 800px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+        }
+
+        .project-section {
+            margin-bottom: 60px;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .project-title {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            font-weight: normal;
+        }
+
+        .project-tag {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 3px 8px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .project-description {
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+        }
+
+        .view-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .view-site-link {
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 5px 12px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .view-site-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .media-unit {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .media-unit:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .media-unit img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .caption {
+            padding: 10px;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Network-Activated Design</h1>
-    <input type="text" id="text-input" placeholder="студія критичних технологій">
-    
-    <!-- Tab System -->
-    <div class="tabs">
-        <ul class="tab-links">
-            <ul class="tab-links">
-                <li class="active"><a href="https://www.972mag.com/lavender-ai-israeli-army-gaza/" target="_blank">Lavender AI: Israeli Army Gaza</a></li>
-                <li><a href="https://zine.zora.co/the-laws-of-lorecore-shumon-basar" target="_blank">The Laws of Lorecore - Shumon Basar</a></li>
-                <li><a href="https://flash---art.com/article/corecore/?fbclid=PAAaZ9KEwL87V5E0E7Bsw028NJV3lDTAFX9AQR5n9ge8mZaIS61Q_-VkZwQcQ_aem_AYP3KvgNvcAm-DqAFsSHEQLDsg8g9Dfh-IGq_V_qphYJ8yY6iL6OaVrk6022-m6-agQ" target="_blank">Corecore</a></li> 
-                <li><a href="https://networkcultures.org/longform/2024/02/16/silly-girl-theory-scrolling-the-digital-playgrounds/" target="_blank">Silly Girl Theory: Scrolling the Digital Playgrounds</a></li> 
-                <li><a href="https://cominsitu.files.wordpress.com/2021/02/visions-of-excess-selected-writings-1927-1939-by-georges-bataille-z-lib.org_-1.pdf" target="_blank">Visions of Excess: Selected Writings</a></li> 
-                <li><a href="https://t.me/PARUKR" target="_blank">PARUKR</a></li>
-                <li><a href="https://www.dazeddigital.com/life-culture/article/62014/1/listen-to-logged-on-episode-seven-cute-accelerationism" target="_blank">Listen to Logged On: Episode Seven - Cute Accelerationism</a></li>
-                <li><a href="https://alchorisma.constantvzw.org/Reader/contributions/Ils_David_-_TechGnosis_0_only_intro.pdf" target="_blank">TechGnosis</a></li> 
-                <li><a href="https://www.jstor.org/stable/902508?searchText=crimean%20tatar&searchUri=%2Faction%2FdoBasicSearch%3FQuery%3Dcrimean%2Btatar&ab_segments=0%2Fbasic_search_gsv2%2Fcontrol&refreqid=fastly-default%3A65f0a91412670f9e54bc0a2a409ee2b0" target="_blank">Crimean Tatar</a></li> 
-                <li><a href="https://www.iccrimea.org/scholarly/nbelitser.html" target="_blank">iccrimea.org</a></li> 
-                <li><a href="https://archive.org/details/PhantomOfTheParadise" target="_blank">Phantom of the Paradise</a></li>
-                <li><a href="https://www.e-flux.com/journal/59/61130/operational-images/" target="_blank">Operational Images</a></li>
-                <li><a href="https://www.academia.edu/45183881/Cruel_Intimacies_W_archives_Archival_Imaginaries_War_and_Contemporary_Art_" target="_blank">Cruel Intimacies: War and Contemporary Art</a></li>
-                <li><a href="https://youtube.com/shorts/o7DMHJKhpws?si=J4knjPlTG-LT_TfX" target="_blank">Shorts</a></li>
-                <li><a href="https://dfrlab.org/2023/12/14/massive-russian-influence-operation-targeted-former-ukrainian-defense-minister-on-tiktok/" target="_blank">Massive Russian Influence Operation</a></li>
-                <li><a href="https://youtube.com/shorts/18Dcd1ezFww?si=3tRT37detMX59DV3" target="_blank">Shorts</a></li>
-                <li><a href="https://d2w9rnfcy7mm78.cloudfront.net/24337920/original_45dccf0f8694ddac9825845cea58639f.jpg?1698176427?bc=0" target="_blank">Image</a></li>
-                <li><a href="https://ia800302.us.archive.org/31/items/matterandmemory00berguoft/matterandmemory00berguoft.pdf" target="_blank">Matter and Memory</a></li>
-            </ul>
-    </div>
-    <div id="about">
-        <p>
-            Cтворена для того, щоб перетворити невидиму інфраструктуру в видиму, надати інструменти для мрійників, боротися з алгоритмічним авторитаризмом та створювати захоплюючі кібернетичні казки.
-        </p>
-      <p>  Ми прагнемо організувати безпечний простір для всіх учасників.
-        </p>
-        </ul>
-        <p>Ми відкриті для співпраці з тими, хто хоче зробити світ технологій більш прозорим, безпечним та творчим. <button type="button">Доєднаюсь-ка!</button></p>
-    </div>
-    <div id="image-container"></div>
+    <div class="container">
+        <!-- Artist Bio Section -->
+        <section id="bio" class="bio-section">
+            <p class="bio-text">
+                Nazar Golianych is a moving-image artist and investigator. His aim is to explore new ways of sensing and making-sense of the world. Nazar maintains <a href="https://wip.network/" style="color: #fff;">wip.network</a>
+                —a space for study groups that enables independent research with community funding. He is an Open Source Researcher volunteer for two investigative agencies - <a href="https://molfar.com/en" style="color: #fff;"> Molfar</a> and <a href="https://trap.org.ua/en/" style="color: #fff;"> TrapAgressor </a>. He is a text-editor for Berlin-based art magazine <a href="https://localgr0up.com/?fbclid=PAZXh0bgNhZW0CMTEAAaYORIveBzg-ukuE5K3OXJvhZpQDg3yvxCMfpB_bSnrhJB8yuAGysdreYZw_aem_syGw-E3Wp4zqpfebrBn_LQ" style="color: #fff;">local group</a>. He works full time for Google, helping small Ukrainian business with their advertising strategy. Reach him via golianych.nazar@gmail.com.
+            </p>
+        </section>
 
-    <script src="ntd.js"></script>
+        <!-- Arctic Territorialization Project -->
+        <section id="arctic-territorialization" class="project-section">
+            <h2 class="project-title">At the break: Territorialization of Arctic</h2>
+            <span class="project-tag">&lt;investigation&gt;</span>
+            <p class="project-description">
+            This investigation examines Russia's transformation of the Arctic through extractivist infrastructure, using open-source tools to analyze four case studies: the Prirazlomnaya oil platform, the North Sea Passage, a transarctic fiber-optic cable, and military expansion along the northern border. As climate change accelerates ice loss, Russia leverages new opportunities for control, reorienting the Arctic's spatial and economic networks toward East Asia as a key geopolitical strategy in the 21st century.
+            </p>
+            <div class="view-links">
+                <!-- Add links if available -->
+            </div>
+            <div class="gallery">
+                <div class="media-unit">
+                    <img src="images\Arctic Sun.jpg" alt="Arctic Sun">
+                    <div class="caption">Unique conditions that create rectangular sun during sunset in Arctic</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images\prilazlomnaya.jpg" alt="Prirazlomnaya oil platform">
+                    <div class="caption">Prirazlomnaya, the first extraction installation on the shelf of Arctic</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images\opticfiber.jpg" alt="Optical fiber cable">
+                    <div class="caption">Fiberoptic cable being developed in Murmansk for Arctic Conditions</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images\infrastructure_oil.png" alt="Oil infrastructure">
+                    <div class="caption">Russian Oil & Gas infrastructure along the Arctic coast</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chemosynthetic Pseudoscorpions Project -->
+        <section id="pseudoscorpions" class="project-section">
+            <h2 class="project-title">Chemosynthetic Pseudoscorpions</h2>
+            <span class="project-tag">&lt;moving image&gt;</span>
+            <p class="project-description">
+             This film examines the source of life energy alternative to sun. Opposing the heliocentric approach to production of life, we open a gate to explore politics from microbiological to planetary scales. Filmed in Romanian, Mexican & Italian cave systems, that for million of years were developing without sun as a source of life, juxtaposing to potential extraterrestrial life on other celestial bodies.
+            </p>
+            <div class="view-links">
+                <!-- Add links if available -->
+            </div>
+            <div class="gallery">
+                <div class="media-unit">
+                    <img src="images\europa-1998.jpg" alt="Europa moon">
+                    <div class="caption">Europa, one of Jupiter's four large, Galilean moons</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images\Frassasi Cave.jpg" alt="Frassasi Cave">
+                    <div class="caption">Frassasi Cave, Italy</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images\movile cave.jpg" alt="Movile Cave">
+                    <div class="caption">Movile Cave, Romania</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images\Villa Luz Cave.jpg" alt="Villa Luz Cave">
+                    <div class="caption">Villa Luz Cave, Mexico</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Economies of the Aftermath Project -->
+        <section id="economies-aftermath" class="project-section">
+            <h2 class="project-title">Economies of the aftermath</h2>
+            <span class="project-tag">&lt;investigation&gt;</span>
+            <p class="project-description">
+                Examination of economic life in the wake of destruction, challenging the conventional notion of reconstruction. Through a lens of negative archaeology, investigation explores how violence doesn't just disrupt economies — it reshapes them entirely. 
+                The study of Mariupol's economic collapse under occupation reveals how infrastructure destruction and resource deprivation are tools of economic colonization. What emerges is a fragmented system — bartering, black markets, forced dependencies—where survival is conditioned by control.
+                Developed for AWCJournal Issue 1: Entanglements of Infrastructures.
+            </p>
+            <div class="view-links">
+                <a href="https://antiwarcoalition.art/texts/16375855-5189-4da4-a8ee-12f2aff4d59e" target="_blank" class="view-site-link">View publication</a>
+            </div>
+            <div class="gallery">
+                <div class="media-unit">
+                    <img src="images\investigation_1_3.png" alt="Domain transition">
+                    <div class="caption">Screenshot from Internet Archive, showing a transition of a domain name from 'tov', coming from Ukrainian ТОВ to Russian OOO</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images\investigation_1_1.png" alt="Dual-currency">
+                    <div class="caption">Screenshot from Telegram channel, showing the introduction of dual-currency in the store</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images\investigation_1_2.png" alt="Food queues">
+                    <div class="caption">Queues for Food at Distribution Points in Mariupol, Google Earth Pro (c), Maxar85</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISARM Project -->
+        <section id="disarm" class="project-section">
+            <h2 class="project-title">DISARM</h2>
+            <span class="project-tag">&lt;moving image&gt;</span>
+            <p class="project-description">
+                "DISARM" follows an information warfare specialist assigned to produce materials for cognitive assaults. Created with custom-built montage software, the work explores how vicarious trauma is strategically inflicted through operational images. In the process of the creation, a database of 7,500,000 messages and 1,000,000 visual elements related to information operations was collected using custom Telegram scrapers. It is work-in-progress, expected to be finished by July 2025.
+            </p>
+            <div class="view-links">
+                <a href="https://youtu.be/ahLG-Wci_pA" target="_blank" class="view-site-link">View Extract #1</a>
+                <a href="https://youtu.be/3idRCRYIP5Y" target="_blank" class="view-site-link">View Extract #2</a>
+            </div>
+            <div class="gallery">
+                <div class="media-unit">
+                    <img src="images/wip_1.png" alt="DISARM project visual">
+                    <div class="caption">Example of custom-built interlacing montage technique</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images/wip-3.png" alt="DISARM project visual">
+                    <div class="caption">Example of custom-built hyperimposition montage technique</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Essays Collection -->
+        <section id="video-essays" class="project-section">
+            <h2 class="project-title">Video Essays Collection</h2>
+            <span class="project-tag">&lt;moving image&gt;</span>
+            <p class="project-description">
+                Collection of video-essays and animations on various topics related to ruins and ruination, biopolitical power and energy, spectral poetry and more. Videos are a long-term practice of artists combining found-footage, 3D and hand-drawn animation.
+            </p>
+            <div class="view-links">
+                <a href="https://www.youtube.com/watch?v=EF49kEWYyyg&ab_channel=Zorrrka" target="_blank" class="view-site-link">Essay on Ruins</a>
+                <a href="https://www.youtube.com/watch?v=Lsq3gVEBDQk&ab_channel=Zorrrka" target="_blank" class="view-site-link">Essay on Revolution</a>
+                <a href="https://youtu.be/VKhvfXpjnbM" target="_blank" class="view-site-link">Essay on Energy</a>
+                <a href="https://youtu.be/byp35xy9OYg" target="_blank" class="view-site-link">Animation Example</a>
+                <a href="https://youtu.be/APngJAjzsYI" target="_blank" class="view-site-link">Poetry Video Excerpt</a>
+            </div>
+            <div class="gallery">
+                <div class="media-unit">
+                    <img src="images/essay_6.png" alt="Video essay screenshot">
+                    <div class="caption">Essay on ruins - Visual exploration of architectural decay</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images/essay_1.png" alt="Video essay screenshot">
+                    <div class="caption">Essay on ruins - visual element</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images/essay_2.png" alt="Video essay screenshot">
+                    <div class="caption">Essay on Revolution - Conceptual representation</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images/essay_3.png" alt="Video essay screenshot">
+                    <div class="caption">Hand-drawn animation sequence video</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images/animation_1.png" alt="Animation screenshot">
+                    <div class="caption">Extract from a poetry video</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images/essay_4.png" alt="Video essay screenshot">
+                    <div class="caption">Essay on energy</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- After Orgy Exhibition Project -->
+        <section id="after-orgy" class="project-section">
+            <h2 class="project-title">After Orgy Exhibition</h2>
+            <span class="project-tag">&lt;moving image&gt;</span>
+            <p class="project-description">
+                When visual sensation surpasses the limits of sense-making, the post-image world emerges. The questions that follow are: how did this rupture occur, what does it mean to see images, and what can be done in the aftermath? "Every beautiful image I see is blurry because of the irreparable damage done to my retinas" is a moving image work developed for the After Orgy 003 exhibition at Pharmakon Gallery in Bucharest.
+            </p>
+            <div class="view-links">
+                <a href="https://youtu.be/tDlkFC_aHe8" target="_blank" class="view-site-link">View Full Video</a>
+                <a href="https://www.ofluxo.net/after-the-orgy-003-group-show-pharmakon-gallery-bucharest/" target="_blank" class="view-site-link">View Exhibition on ofluxo</a>
+            </div>
+            <div class="gallery">
+                <div class="media-unit">
+                    <img src="images/EBIIS_1.jpg" alt="After Orgy exhibition visual">
+                    <div class="caption">After Orgy 003 - Installation view at Pharmakon Gallery</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images/EBIIS_5.jpg.png" alt="After Orgy exhibition visual">
+                    <div class="caption">Video still - Visual exploration of damaged retinal perception</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images/EBIIS_6.jpg.png" alt="After Orgy exhibition visual">
+                    <div class="caption">Video still - Post-image world visualization</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Polyflux Game Project -->
+        <section id="polyflux" class="project-section">
+            <h2 class="project-title">Polyflux Game</h2>
+            <span class="project-tag">&lt;installation&gt;</span>
+            <p class="project-description">
+                Polyflux is a game developed for the exhibition "Mom, Post-Internet is Not a Phase" in Athens. In Polyflux, a phoenix emerges from the ashes of an overheated computer, overwhelmed by an excess of spawned butterflies. With each system reboot, the game offers a new perspective, transforming the crash into a generative cycle of digital rebirth.
+            </p>
+            <div class="view-links">
+                <a href="https://kubaparis.com/submission/469655" target="_blank" class="view-site-link">View Exhibition on kubaparis</a>
+                <a href="https://www.youtube.com/watch?v=bCXcv33WtpI&list=PL8ZTY9RzDd_wjo9P--q6l0eOJKaIuFysx&index=2&ab_channel=Zorrrka" target="_blank" class="view-site-link">View Video Section</a>
+            </div>
+            <div class="gallery">
+                <div class="media-unit">
+                    <img src="images/post-internet.jpg" alt="Post-Internet exhibition">
+                    <div class="caption">Installation view - "Mom, Post-Internet is Not a Phase" exhibition in Athens</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images/polyflux_1.png" alt="Polyflux game screenshot">
+                    <div class="caption">Polyflux - Phoenix emerging from overheated computer scene</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images/polyflux_3.png" alt="Polyflux game screenshot">
+                    <div class="caption">Polyflux - Butterfly spawning sequence</div>
+                </div>
+                <div class="media-unit">
+                    <img src="images/polyflux_2.png" alt="Polyflux game screenshot">
+                    <div class="caption">Polyflux - Digital rebirth cycle visualization</div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
